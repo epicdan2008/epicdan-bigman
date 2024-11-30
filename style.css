@@ -1,0 +1,536 @@
+*{
+    margin:0;
+    padding: 0;
+    /*explain later*/
+    box-sizing: border-box;
+} 
+body {
+    margin: 0;
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+    font-family: Arial, sans-serif;
+    color: #333;
+    overflow: scroll;
+}
+section {
+    height: 100vh;
+    scroll-snap-align: start;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.section--1 {
+    background-image: url("elite.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    align-items: flex-start;
+    
+}
+nav {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    padding: 10px 20px;
+    margin-top: 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    color: rgb(0, 153, 255);
+}
+.welcome-container {
+    margin-top: 130px;
+    text-align: left;
+    margin-left: 40px;
+}
+
+.text--container h1 {
+    font-size: 80px;
+    margin-bottom: 10px;
+}
+
+.text--container h2 {
+    font-size: 36px;
+}
+
+.colors {
+    color: rgb(0, 153, 255);
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+.buttons button {
+    background-color: rgb(0, 153, 255);
+    color: #fff;
+    width: 150px;
+    border-radius: 30px;
+    padding: 10px;
+    font-weight: 500;
+    border: none;
+    margin: 10px;
+    cursor: pointer;
+}
+
+
+
+/* About Section styling */
+#about {
+    background-color: #f5f5f5;
+    padding: 50px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#about--title {
+    font-size: 38px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+#line {
+    width: 180px;
+    height: 3px;
+    background-color:rgb(0, 153, 255);
+    border: none;
+    margin-bottom: 40px;
+}
+
+.main-about {
+    display: flex;
+    align-items: center;
+    gap: 80px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.image--container img {
+    width: 300px;
+    height: 300px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.about-text--container {
+    max-width: 600px;
+    padding: 20px;
+}
+
+#info {
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+.projects{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background:rgba(0, 153, 255, 0.205) ;
+
+}
+
+.main--container{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 20px;
+}
+.project--card{
+    border:2px solid  rgb(0, 153, 255);
+    border-radius: 10px;
+    height: fit-content;
+    padding:5px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction:column;
+}
+
+.project--card img{
+        height:300px;
+        width:300px;
+        border-radius: inherit;
+    }
+    .project--card p{
+        font-size: 20px;
+        margin-top: 10px;
+        text-align: center;
+        margin-bottom: 10px;
+        
+    }
+    
+    .project--card button{
+        width: 150px;
+        padding:10px;
+        color:white;
+        background-color:rgb(0, 153, 255) ;
+        border: none;
+        border-radius: 10px;
+    }
+  
+    /*contact section styling*/
+
+#contact--form{
+    border: 2px solid  rgb(0, 153, 255);
+    border-radius: 10px;
+    padding: 10px;
+}
+#contact--form input{
+    height: 40px;
+    width: 400px;
+    border: 1px solid  rgb(0, 153, 255);
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 10px;
+    
+}
+
+contact--form input::placeholder{
+    color: black;
+    font-size: 14px;
+}
+
+
+#contact--form textarea{
+    height: 200px;
+    width: 100%;
+    border: 1px solid  rgb(0, 153, 255);
+    border-radius: 10px;
+}
+
+
+#contact--form button{
+    background-color:  rgb(0, 153, 255);
+    color: white;
+    padding:10px;
+    border-radius: 50px;
+    border: none;
+}
+
+#contact--form .btn--check{
+    display: flex;
+    gap: 10px;
+}
+
+#contact--form .btn--check input{
+    height: 20px;
+    margin: 0;
+    width: 2%;
+}
+
+ #contact--form textarea::placeholder {
+    color: #888;
+    font-style: italic; 
+    font-size: 14px;
+  }
+  .contacts h2{
+    margin-bottom: 40px;
+    font-size: 60px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
